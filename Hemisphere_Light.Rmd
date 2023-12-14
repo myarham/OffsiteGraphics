@@ -1,0 +1,44 @@
+---
+title: "Graphics Work"
+author: "Michelle Yarham - Will MacKenzie"
+date: "2023-12-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+
+require(ggplot2)
+require(tidyverse)
+require(data.table)
+```
+
+Import Data
+
+```{r cars}
+hemilight <- fread("C:/Users/myarham/OneDrive - Government of BC/Lw_understorey/GLA Fisheye Analsyis/all_hemisphere_data.csv")
+```
+
+Plot data
+
+```{r pressure, echo=FALSE}
+##select column that we want to use just to simplify things
+hemilight2 <- hemilight %>% dplyr::select(Location, Species, `Trans Tot`) %>% rename(Light = `Trans Tot`)
+
+ggplot(hemilight2, aes(Species, Light), fill = Location)+
+  geom_boxplot()+
+  facet_wrap(~Location)
+
+```
+```{r}
+offsite.si <- fread("./inputs/Offsite2023_SiteTools_data.csv")
+offsite.si2 <- offsite.si %>% filter(Location2 %in% "LW12")
+
+ggplot(offsite.si, aes(Species, `Site Index (m)`), fill = Location2, colour = Species)+
+  geom_boxplot(aes(colour = Species))+
+  facet_wrap(~Location2)+
+  theme_minimal()+
+  geom_hline(yintercept=21, linetype=5, colour = "red") 
+
+```
+
