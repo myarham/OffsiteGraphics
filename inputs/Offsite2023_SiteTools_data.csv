@@ -1,0 +1,81 @@
+﻿Location,Location2,Height (m),Years to Breast Height (yrs),Species Name,Plot,treeno,Species,BH Age (yrs),Site Index (m),Total Age (yrs),Pith
+Doris,Doris,12,7.73,Western larch,4,1,Lw,26,20.05,33.23,no pith
+Doris,Doris,12.4,7.66,Ponderosa pine,21,2,Py,27,20.43,34.16,
+Doris,Doris,11.7,7.87,Ponderosa pine,21,3,Py,26,20.02,33.37,no pith
+Doris,Doris,12,9.64,Ponderosa pine,21,1,Py,31,18.26,40.14,
+Doris,Doris,9.6,9.19,Ponderosa pine,10,1,Py,24,18.31,32.69,
+Doris,Doris,14.9,7.34,Western larch,4,3,Lw,30,21.75,36.84,
+Doris,Doris,14.3,7.28,Western larch,24,2,Lw,28,21.97,34.78,
+Doris,Doris,13.4,7.53,Western larch,4,2,Lw,28,20.85,35.03,
+Doris,Doris,15.2,8.17,Douglas-fir,1,1,Fd,28,23.67,35.67,
+Doris,Doris,9.8,10.39,Ponderosa pine,19,1,Py,27,17.21,36.89,
+Doris,Doris,10.1,9.57,Ponderosa pine,10,3,Py,26,18.02,35.07,
+Doris,Doris,13.9,7.16,Siberian larch,7,1,Ls,26,22.47,32.66,
+Doris,Doris,13.6,7.47,Western larch,24,1,Lw,28,21.1,34.97,no pith
+Doris,Doris,12.8,7.71,Western larch,12,1,Lw,28,20.1,35.21,
+Doris,Doris,9.4,9.46,Ponderosa pine,10,2,Py,24,18.04,32.96,
+Doris,Doris,14.9,7.24,Western larch,4,3,Lw,29,22.23,35.74,
+Doris,Doris,12.9,8.32,Douglas-fir,1,3,Fd,24,23.01,31.82,no pith
+Doris,Doris,13,7.41,Siberian larch,8,1,Ls,26,21.34,32.91,no pith
+Doris,Doris,12.6,9.07,Spruce hybrid,2,2,Sx,26,22.49,34.57,
+Doris,Doris,13.3,8.04,Douglas-fir,1,2,Fd,23,24.54,30.54,no pith
+Doris,Doris,15.7,3.26,Ponderosa pine,19,1,Py,21,27.5,23.76,
+Fd2,Fd2,21.9,8.39,Douglas-fir,,1,Fd,48,22.52,55.89,
+Fd2,Fd2,20.7,5.6,Lodgepole pine,,1,Pl,50,20.74,55.6,
+Fd2,Fd2,24.6,9.36,Spruce hybrid,,1,Sx,61,21.31,69.86,no pith
+LW12,LW12,18.5,7.59,Western larch,,1,Lw,43,20.6,50.09,
+LW12,LW12,14.7,5.32,Lodgepole pine,,2,Pl,28,21.58,33.32,no pith
+LW12,LW12,16.8,7.18,Western larch,,2,Lw,33,22.62,39.68,
+LW12,LW12,17.8,8.82,Spruce hybrid,,1,Sx,35,24.06,43.32,no pith
+LW12,LW12,17.6,5.06,Lodgepole pine,,3,Pl,33,22.83,38.06,no pith
+LW12,LW12,20.6,6.57,Western larch,,3,Lw,34,26.48,40.07,
+LW12,LW12,,,Douglas-fir,,2,Fd,47,,,
+Mitten,Mitten,15.2,7.66,Douglas-fir,5,2,Fd,24,26.79,31.16,no pith
+Mitten,Mitten,,,Siberian larch,4,2,Ls,25,,,no pith
+Mitten,Mitten,17.6,4.8,Lodgepole pine,16,1,Pl,30,24.15,34.8,
+Mitten,Mitten,17.6,8.97,Spruce hybrid,4,3,Sx,36,23.29,44.47,
+Mitten,Mitten,16.9,9.26,Spruce hybrid,9,1,Sx,37,21.96,45.76,no pith
+Mitten,Mitten,18.1,8.14,Spruce hybrid,16,1,Sx,29,27.85,36.64,
+Mitten,Mitten,17.2,8.74,Spruce hybrid,4,2,Sx,33,24.38,41.24,no pith
+Mitten,Mitten,15.2,9.85,Subalpine fir,5,2,Bl,34,20.48,43.35,no pith
+Mitten,Mitten,14.2,7.92,Douglas-fir,5,3,Fd,24,25.16,31.42,
+Mitten,Mitten,18.4,6.62,Siberian larch,16,1,Ls,30,25.86,36.12,
+Mitten,Mitten,17.8,8.92,Spruce hybrid,4,1,Sx,36,23.53,44.42,no pith
+Mitten,Mitten,18.5,6.99,Siberian larch,4,3,Ls,35,23.73,41.49,no pith
+Mitten,Mitten,16.4,6.9,Siberian larch,4,2,Ls,29,24.03,35.4,
+Mitten,Mitten,18,6.52,Siberian larch,4,1,Ls,28,26.4,34.02,no pith
+Mitten,Mitten,12.9,7.84,Douglas-fir,9,1,Fd,21,25.69,28.34,
+Mitten,Mitten,15,10.93,Subalpine fir,25,4,Bl,38,18.68,48.43,no pith
+Mitten,Mitten,14,13.93,Subalpine fir,5,1,Bl,49,14.26,62.43,
+Mitten,Mitten,12.4,14.59,Subalpine fir,5,3,Bl,46,13.35,60.09,
+Mitten,Mitten,13.2,9.09,Douglas-fir,9,2,Fd,30,19.58,38.59,
+Mitten,Mitten,15.8,7.77,Douglas-fir,5,1,Fd,26,26.08,33.27,
+Muldoe,Muldoe,21.7,7.1,Douglas-fir,,2,Fd,30,31.42,36.6,
+Muldoe,Muldoe,20.5,7.1,Douglas-fir,,1,Fd,28,31.36,34.6,no pith
+Muldoe,Muldoe,19.9,7.09,Douglas-fir,,3,Fd,27,31.4,33.59,no pith
+Muldoe,Muldoe,18.7,3.97,Lodgepole pine,,1,Pl,22,29.71,25.97,no pith
+Parot,Parrot,5.2,10.43,Western redcedar,Cw,1,Cw,18,15.17,27.93,
+Parot,Parrot,5.7,10.5,Western redcedar,Cw,3,Cw,20,15.01,30,
+Parot,Parrot,5.9,10.23,Western redcedar,Cw,2,Cw,20,15.36,29.73,
+Parot,Parrot,20.6,6.15,Western larch,Lw4,1,Lw,28,29.38,33.65,
+Parrot East,Parrot,,,Ponderosa pine,Py 4,2,Py,27,,,
+Parrot East,Parrot,15.5,4.77,Lodgepole pine,Ls6,1,Pl,25,24.01,29.77,
+Parrot East,Parrot,16.9,6.53,Western larch,Lw4,3,Lw,26,26.12,32.03,
+Parrot East,Parrot,17.4,6.36,Western larch,Lw4,2,Lw,25,27.29,30.86,no pith
+Parrot East,Parrot,11.8,8.21,Ponderosa pine,Py5,1,Py,27,19.71,34.71,
+Parrot West,Parrot,12.9,6.42,Ponderosa pine,PY5,3,Py,25,21.95,30.92,
+Parrot West,Parrot,14.1,5.18,Ponderosa pine,Py5,1,Py,24,23.93,28.68,
+Parrot West,Parrot,16.5,6.7,Western larch,Lw4,1,Lw,27,25.11,33.2,no pith
+Parrot West,Parrot,15.5,4.98,Lodgepole pine,Pl3,3,Pl,27,23.02,31.98,
+Parrot West,Parrot,15,4.89,Lodgepole pine,Pl3,1,Pl,25,23.39,29.89,
+Parrot West,Parrot,15.8,6.83,Western larch,Lw4,2,Lw,27,24.27,33.33,
+Parrot West,Parrot,14.1,7.05,Ponderosa pine,Py5,2,Py,29,21.49,35.55,
+Parrot East,Parrot,14.8,6.85,Siberian larch,6,1,Ls,25,24.13,31.35,
+Parrot East,Parrot,11.8,7.35,Ponderosa pine,5,1,Py,25,20.63,31.85,
+Parrot East,Parrot,11.4,7.26,Ponderosa pine,5Py,3,Py,24,20.66,30.76,no pith
+Parrot West,Parrot,15.4,4.79,Lodgepole pine,PL3,2,Pl,25,23.89,29.79,
+Parrot West,Parrot,14.7,7.08,Western larch,Lw4,3,Lw,27,22.94,33.58,
+Poison,Poison,6,9.62,Tamarack,32,1,lt,18,15.22,27.12,
+Poison,Poison,5.9,10.9,Siberian larch,29,1,Ls,22,12.89,32.4,
+Poison,Poison,9.7,6.54,Lodgepole pine,30,1,Pl,23,17.41,29.54,no pith
+Poison,Poison,6,15.52,Black spruce,12,1,Sb,17,13.64,32.02,
