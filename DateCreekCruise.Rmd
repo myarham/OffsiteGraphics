@@ -42,7 +42,10 @@ datecreekcruise <- fread("./clean_data/cleaned_treedata.csv")
 # Block <- c(rep("413", 8), rep("440", 8), rep("472", 8), rep("473", 8), rep("528", 8), rep("657", 8), rep("676", 8), rep("677", 8), rep("715", 8), rep("738", 8), rep("795", 8), rep("818", 8))
 # Species <- rep(c("Sx", "Pl", "Hw", "Cw", "Ep", "Bl", "At"), 4)
 # Stems_ha <- c(0,100,200,300,400,500,600,700,800,900,1000,1100,1200)
-data <- datecreekcruise #%>% select(BlockID,Plot,Species,Stems_ha)
+remove.tree <- c(125, 109)#
+###remove identified mature trees
+data <- datecreekcruise %>% rowid_to_column("tree_no") %>% filter(!tree_no %in% remove.tree)
+xx <- data %>% filter(Species == "At")
 
 ggplot(data, aes(x = plot_no, y = Gross_Bio, fill = Species)) +
   geom_col(colour = "black", position = "fill") +
@@ -50,13 +53,13 @@ ggplot(data, aes(x = plot_no, y = Gross_Bio, fill = Species)) +
   scale_fill_brewer(palette = "Pastel1")+
   facet_wrap(~treatment+rep)
 
-ggplot(data, aes(x=Plot, y=Gross_Bio, fill=Species)) +
+ggplot(data, aes(x=plot_no, y=Gross_Bio, fill=Species)) +
   geom_bar(stat = "identity", position = "stack") +
   labs(title = "Stems per Hectare by Block and Species",
        x = "Block",
        y = "Stems per Hectare",
        fill = "Species") +
   theme_minimal()+
-  facet_grid(rows = vars(treatment), column = vars(rep))
+    facet_wrap(~treatment+rep)
 ```
 
