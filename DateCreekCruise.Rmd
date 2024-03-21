@@ -20,11 +20,12 @@ cruise.data1 <- read_xlsx("F:/OneDrive - Government of BC/MixedStands/KispioxCru
 cruise.data <- read_xlsx("F:/OneDrive - Government of BC/MixedStands/KispioxCruise_bytree_FINAL.xlsx", sheet = "Compilation volumes") %>%         select(Licence, BlockID, treatment, rep)  %>% left_join(cruise.data1)
 cruise.data$Species <- cruise.data$Species %>%
     str_replace_all(c("S" = "Sx", "H" = "Hw", "PL" = "Pl", "C" = "Cw", "AT" = "At", "AC" = "Ac", "B" = "Bl", "E" = "Ep"))
+plot.numbering <- cruise.data %>% select(BlockID, Plot) %>% distinct () %>% group_by(BlockID) %>% mutate(plot_no = row_number()) %>% filter(!is.na(BlockID)) %>% distinct()
 
- tree.data <- cruise.data %>% select(Licence, BlockID, treatment, rep, Plot,Tree,Species, HT, DBH, Stems_ha, Gross_Bio, TC) %>%
+ tree.data <- cruise.data %>% left_join(plot.numbering, by=c("BlockID", "Plot"))%>% select(Licence, BlockID, treatment, rep, plot_no,Tree,Species, HT, DBH, Stems_ha, Gross_Bio, TC) %>%
    filter(complete.cases(.))
 fwrite(tree.data, "./clean_data/cleaned_treedata.csv")
-si.data <- cruise.data %>% select(Licence, BlockID, treatment, rep, Plot, Tree, Species, HT, CountedAge, SiteIndex, AgeCorrection, CorrectedAge) %>%
+si.data <- cruise.data %>% select(Licence, BlockID, treatment, rep, Plot, Tree, Species, HT, CountedAge, SiteIndex, AgeCorrection, CorrectedAge) %>% 
    filter(!is.na(CountedAge))
 fwrite(si.data, "./clean_data/cleaned_SI50data.csv")
 cruise.info <- read_xlsx("F:/OneDrive - Government of BC/MixedStands/KispioxCruise_bytree_FINAL.xlsx", sheet = "Compilation volumes") %>%         select(Licence, BlockID, treatment)
@@ -43,11 +44,11 @@ datecreekcruise <- fread("./clean_data/cleaned_treedata.csv")
 # Stems_ha <- c(0,100,200,300,400,500,600,700,800,900,1000,1100,1200)
 data <- datecreekcruise #%>% select(BlockID,Plot,Species,Stems_ha)
 
-ggplot(data, aes(x = Plot, y = Gross_Bio, fill = Species)) +
+ggplot(data, aes(x = plot_no, y = Gross_Bio, fill = Species)) +
   geom_col(colour = "black", position = "fill") +
   scale_y_continuous(labels = scales::percent) +
   scale_fill_brewer(palette = "Pastel1")+
-  facet_grid(rows = vars(treatment))
+  facet_wrap(~treatment+rep)
 
 ggplot(data, aes(x=Plot, y=Gross_Bio, fill=Species)) +
   geom_bar(stat = "identity", position = "stack") +
