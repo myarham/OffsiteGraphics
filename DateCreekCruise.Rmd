@@ -1,0 +1,33 @@
+---
+title: "DateCreekCruise"
+author: "Myarham"
+date: "2024-03-21"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+library(ggplot2)
+library(tidyverse)
+library(data.table)
+```
+
+Import Data
+```{r}
+datecreekcruise <- fread("C:/Users/myarham/OneDrive - Government of BC/MixedStands/compostiondata.csv") %>% mutate(stems_ha= `Stems/ha`)
+
+# Block <- c(rep("413", 8), rep("440", 8), rep("472", 8), rep("473", 8), rep("528", 8), rep("657", 8), rep("676", 8), rep("677", 8), rep("715", 8), rep("738", 8), rep("795", 8), rep("818", 8))
+# Species <- rep(c("Sx", "Pl", "Hw", "Cw", "Ep", "Bl", "At"), 4)
+# Stems_ha <- c(0,100,200,300,400,500,600,700,800,900,1000,1100,1200)
+data <- datecreekcruise %>% select(BLOCK,PLOT,Species,stems_ha)
+
+ggplot(data, aes(x=PLOT, y=stems_ha, fill=Species)) +
+  geom_bar(stat = "identity", position = "stack") +
+  labs(title = "Stems per Hectare by Block and Species",
+       x = "Block",
+       y = "Stems per Hectare",
+       fill = "Species") +
+  theme_minimal()+
+  facet_wrap(~BLOCK)
+```
+
