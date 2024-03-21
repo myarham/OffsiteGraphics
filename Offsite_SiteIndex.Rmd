@@ -17,13 +17,15 @@ Import Data
 
 ```{r}
 offsite.si <- fread("./inputs/Offsite2023_SiteTools_data.csv")
-offsite.si2 <- offsite.si %>% filter(Location2 %in% "LW12")
+species.select <- c("Fd", "Lw", "Pl", "Sx")
 
-ggplot(offsite.si, aes(Species, `Site Index (m)`), fill = Location2, colour = Species)+
-  geom_boxplot(aes(colour = Species))+
+offsite.si2 <- offsite.si %>% filter(Species %in% species.select)#Location2 %in% "LW12",
+
+ggplot(offsite.si2, aes(Species, `Site Index (m)`), fill = Location2, colour = Species)+
+  geom_violin(aes(colour = Species))+
   facet_wrap(~Location2)+
   theme_minimal()+
-  geom_hline(yintercept=21, linetype=5, colour = "red") 
+  geom_hline(yintercept=21, linetype=5, colour = "red")
 
 ```
 

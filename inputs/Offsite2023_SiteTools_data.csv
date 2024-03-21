@@ -54,15 +54,18 @@ Muldoe,Muldoe,21.7,7.1,Douglas-fir,,2,Fd,30,31.42,36.6,
 Muldoe,Muldoe,20.5,7.1,Douglas-fir,,1,Fd,28,31.36,34.6,no pith
 Muldoe,Muldoe,19.9,7.09,Douglas-fir,,3,Fd,27,31.4,33.59,no pith
 Muldoe,Muldoe,18.7,3.97,Lodgepole pine,,1,Pl,22,29.71,25.97,no pith
-Parot,Parrot,5.2,10.43,Western redcedar,Cw,1,Cw,18,15.17,27.93,
-Parot,Parrot,5.7,10.5,Western redcedar,Cw,3,Cw,20,15.01,30,
-Parot,Parrot,5.9,10.23,Western redcedar,Cw,2,Cw,20,15.36,29.73,
-Parot,Parrot,20.6,6.15,Western larch,Lw4,1,Lw,28,29.38,33.65,
+Parrot South,Parrot,5.2,10.43,Western redcedar,Cw,1,Cw,18,15.17,27.93,
+Parrot South,Parrot,5.7,10.5,Western redcedar,Cw,3,Cw,20,15.01,30,
+Parrot South,Parrot,5.9,10.23,Western redcedar,Cw,2,Cw,20,15.36,29.73,
+Parrot East ,Parrot,20.6,6.15,Western larch,Lw4,1,Lw,28,29.38,33.65,
 Parrot East,Parrot,,,Ponderosa pine,Py 4,2,Py,27,,,
 Parrot East,Parrot,15.5,4.77,Lodgepole pine,Ls6,1,Pl,25,24.01,29.77,
 Parrot East,Parrot,16.9,6.53,Western larch,Lw4,3,Lw,26,26.12,32.03,
 Parrot East,Parrot,17.4,6.36,Western larch,Lw4,2,Lw,25,27.29,30.86,no pith
 Parrot East,Parrot,11.8,8.21,Ponderosa pine,Py5,1,Py,27,19.71,34.71,
+Parrot East,Parrot,14.8,6.85,Siberian larch,6,1,Ls,25,24.13,31.35,
+Parrot East,Parrot,11.8,7.35,Ponderosa pine,5,1,Py,25,20.63,31.85,
+Parrot East,Parrot,11.4,7.26,Ponderosa pine,5Py,3,Py,24,20.66,30.76,no pith
 Parrot West,Parrot,12.9,6.42,Ponderosa pine,PY5,3,Py,25,21.95,30.92,
 Parrot West,Parrot,14.1,5.18,Ponderosa pine,Py5,1,Py,24,23.93,28.68,
 Parrot West,Parrot,16.5,6.7,Western larch,Lw4,1,Lw,27,25.11,33.2,no pith
@@ -70,9 +73,6 @@ Parrot West,Parrot,15.5,4.98,Lodgepole pine,Pl3,3,Pl,27,23.02,31.98,
 Parrot West,Parrot,15,4.89,Lodgepole pine,Pl3,1,Pl,25,23.39,29.89,
 Parrot West,Parrot,15.8,6.83,Western larch,Lw4,2,Lw,27,24.27,33.33,
 Parrot West,Parrot,14.1,7.05,Ponderosa pine,Py5,2,Py,29,21.49,35.55,
-Parrot East,Parrot,14.8,6.85,Siberian larch,6,1,Ls,25,24.13,31.35,
-Parrot East,Parrot,11.8,7.35,Ponderosa pine,5,1,Py,25,20.63,31.85,
-Parrot East,Parrot,11.4,7.26,Ponderosa pine,5Py,3,Py,24,20.66,30.76,no pith
 Parrot West,Parrot,15.4,4.79,Lodgepole pine,PL3,2,Pl,25,23.89,29.79,
 Parrot West,Parrot,14.7,7.08,Western larch,Lw4,3,Lw,27,22.94,33.58,
 Poison,Poison,6,9.62,Tamarack,32,1,lt,18,15.22,27.12,
