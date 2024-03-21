@@ -12,7 +12,15 @@ library(tidyverse)
 library(data.table)
 ```
 
-Import Data
+Import Raw Data
+
+```{r import raw data and clean}
+
+
+```
+
+
+Import Clean data
 ```{r}
 datecreekcruise <- fread("C:/Users/myarham/OneDrive - Government of BC/MixedStands/compostiondata.csv") %>% mutate(stems_ha= `Stems/ha`)
 
