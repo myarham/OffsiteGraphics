@@ -16,20 +16,20 @@ require(readxl)
 Import Raw Data
 
 ```{r import raw data and clean}
-cruise.data1 <- read_xlsx("F:/OneDrive - Government of BC/MixedStands/KispioxCruise_bytree_FINAL.xlsx")
-cruise.data <- read_xlsx("F:/OneDrive - Government of BC/MixedStands/KispioxCruise_bytree_FINAL.xlsx", sheet = "Compilation volumes") %>%         select(Licence, BlockID, treatment)  %>% left_join(cruise.data1)
-cruise.data$Species <- cruise.data$Species %>%
-    str_replace_all(c("S" = "Sx", "H" = "Hw", "PL" = "Pl", "C" = "Cw", "AT" = "At", "AC" = "Ac", "B" = "Bl", "E" = "Ep"))
-
- tree.data <- cruise.data %>% select(Licence, treatment, Plot,Tree,Species, HT, DBH, Stems_ha, Gross_Bio, TC) %>%
-   filter(complete.cases(.))
-fwrite(tree.data, "./clean_data/cleaned_treedata.csv")
-si.data <- cruise.data %>% select(Licence, treatment, Plot, Tree, Species, HT, CountedAge, SiteIndex, AgeCorrection, CorrectedAge) %>%
-   filter(!is.na(CountedAge))
-fwrite(si.data, "./clean_data/cleaned_SI50data.csv")
-cruise.info <- read_xlsx("F:/OneDrive - Government of BC/MixedStands/KispioxCruise_bytree_FINAL.xlsx", sheet = "Compilation volumes") %>%         select(Licence, BlockID, treatment)
-doth.data <- read_xlsx("F:/OneDrive - Government of BC/MixedStands/KispioxCruise_bytree_FINAL.xlsx", sheet = "Dothistroma") %>% left_join(cruise.info) %>% left_join(tree.data, by=c("Licence", "Plot", "Tree")) %>% select(Licence, treatment.x, Plot, Species, Tree, HT, DBH, Gross_Bio, LiveCrown, Healthy)
-fwrite(doth.data, "./clean_data/cleaned_doth_data.csv")
+# cruise.data1 <- read_xlsx("F:/OneDrive - Government of BC/MixedStands/KispioxCruise_bytree_FINAL.xlsx")
+# cruise.data <- read_xlsx("F:/OneDrive - Government of BC/MixedStands/KispioxCruise_bytree_FINAL.xlsx", sheet = "Compilation volumes") %>%         select(Licence, BlockID, treatment)  %>% left_join(cruise.data1)
+# cruise.data$Species <- cruise.data$Species %>%
+#     str_replace_all(c("S" = "Sx", "H" = "Hw", "PL" = "Pl", "C" = "Cw", "AT" = "At", "AC" = "Ac", "B" = "Bl", "E" = "Ep"))
+# 
+#  tree.data <- cruise.data %>% select(Licence, treatment, Plot,Tree,Species, HT, DBH, Stems_ha, Gross_Bio, TC) %>%
+#    filter(complete.cases(.))
+# fwrite(tree.data, "./clean_data/cleaned_treedata.csv")
+# si.data <- cruise.data %>% select(Licence, treatment, Plot, Tree, Species, HT, CountedAge, SiteIndex, AgeCorrection, CorrectedAge) %>%
+#    filter(!is.na(CountedAge))
+# fwrite(si.data, "./clean_data/cleaned_SI50data.csv")
+# cruise.info <- read_xlsx("F:/OneDrive - Government of BC/MixedStands/KispioxCruise_bytree_FINAL.xlsx", sheet = "Compilation volumes") %>%         select(Licence, BlockID, treatment)
+# doth.data <- read_xlsx("F:/OneDrive - Government of BC/MixedStands/KispioxCruise_bytree_FINAL.xlsx", sheet = "Dothistroma") %>% left_join(cruise.info) %>% left_join(tree.data, by=c("Licence", "Plot", "Tree")) %>% select(Licence, treatment.x, Plot, Species, Tree, HT, DBH, Gross_Bio, LiveCrown, Healthy)
+# fwrite(doth.data, "./clean_data/cleaned_doth_data.csv")
 
 ```
 
